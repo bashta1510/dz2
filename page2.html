@@ -10,18 +10,37 @@
     <h1>Опитування</h1>
     <form action="https://formspree.io/andiy892@gmail.com"
       method="POST" name="test">
-      <p><b>Ваше ім`я:</b><br>
-           <input type="text" size="40">
+      <p><b><label for="na">Ваше ім`я:</label></b><br>
+           <input id="na" type="text" size="40" required>
+      </p>
+       <p><b><label for="pr">Ваше Прізвище:</label></b><br>
+           <input id="pr" type="text" size="40" required>
+      </p>
+      <p><b><label for="em">Ваш email:</label></b><br>
+           <input id="em" type="email" size="40" required>
       </p>
       <p><b>Яке печиво ви любите найбільше?:</b><Br>
            <input type="radio" name="browser" value="ie"> Керекр<br>
            <input type="radio" name="browser" value="opera"> Пісочне<br>
            <input type="radio" name="browser" value="firefox"> Вівсяне<br>
       </p>
-      <p>Комментар<Br>
+      <p><b>Чи часто ви готуєте печиво вдома?:</b><Br>
+           <input type="radio" name="browser" value="ie"> Часто<br>
+           <input type="radio" name="browser" value="opera"> Інколи<br>
+           <input type="radio" name="browser" value="firefox"> Ніколи<br>
+      </p>
+      <p><b>Як часто ви купуєте печиво?:</b><Br>
+           <input type="radio" name="browser" value="ie"> Кожного дня<br>
+           <input type="radio" name="browser" value="opera"> Двічі на тиждень<br>
+           <input type="radio" name="browser" value="firefox"> Дуже рідко<br>
+      </p>
+      <p>Відправте нам свій улюблений рецепт</p>            
+      <input type="file" name="MyFile"/> <br>
+      
+      <p>Комментар<br>
        <textarea name="comment" cols="40" rows="3"></textarea></p>
           <p><input type="submit" value="Відправити">
           <input type="reset" value="Очистити"></p>
- </form>
+    </form>
 </body>
 </html>
